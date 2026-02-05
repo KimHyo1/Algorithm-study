@@ -1,5 +1,16 @@
 N, K = map(int, input().split())
 result = 0
-while N >= K
+while True:
 
-  
+    target = (N // K) * K
+    result += (N - target)
+    N = target
+
+    if N < K
+        break 
+    result += 1
+    N //= K
+
+result
+print(result)
+
